@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #2284dd;
+  --bg-color: rgb(255, 255, 255);
+  --text-color: linear-gradient(120deg, #113f6b 20%, #319696, #8b68a8, #1a7a62);
+  --font-main: "Roboto Mono", monospace;
+}
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+body {
+  font-family: var(--font-main);
+  background: var(--bg-color);
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+S .container {
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  padding: 2.5rem 5.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-text {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 10rem 3.5rem;
+}
+.content-img img {
+  width: 40rem;
+  padding: 3rem 6rem;
+}
+.content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  padding: 0 2rem;
+}
+.content-msg {
+  font-weight: 900;
+  font-size: 3.3rem;
+  letter-spacing: -2px;
+}
+.content-submsg {
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-right: 12rem;
+}
+.back-btn {
+  padding: 1rem 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  border: none;
+  background: rgba(2, 2, 2, 0.9);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+.back-btn:hover {
+  background: #fff;
+  transition: 0.3s all linear;
+  color: rgba(2, 2, 2, 0.9);
+  border: 1px solid rgba(2, 2, 2, 0.9);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.6;
+}
+.footer-text {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+}
+.footer-username {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+@media (max-width: 990px) {
+  .nav {
+    justify-content: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+  .content-img img {
+    width: 30rem;
+  }
+  .content-msg {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .content-submsg {
+    margin: 0;
+    text-align: center;
+  }
+  .back-btn {
+    width: auto;
+  }
+  .footer-name {
+    font-size: 0.9rem;
+  }
+}
